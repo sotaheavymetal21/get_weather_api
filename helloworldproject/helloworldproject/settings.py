@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "hello_world_app.apps.HelloWorldAppConfig",
 ]
 # ええ感じの仕事をうまい感じにやってくれるミドルウェア
 MIDDLEWARE = [
