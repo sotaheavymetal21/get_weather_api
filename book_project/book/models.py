@@ -10,15 +10,3 @@ class Book(models.Model):
 
     def __str__(self):
         return self.title
-
-
-class Weather(models.Model):
-    location = models.CharField(max_length=32)
-    weather = models.CharField(max_length=32)
-    temperature = models.IntegerField()
-
-    def __str__(self):
-        return self.location
-
-    class Meta:
-        verbose_name = verbose_name_plural = "天気情報"
