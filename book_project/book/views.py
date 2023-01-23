@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from django.views.generic import ListView, DetailView
 from rest_framework.generics import ListCreateAPIView
-from rest_framework.views import APIView
 
 from .models import Book, Weather
 from .serializers import BookSerializer
