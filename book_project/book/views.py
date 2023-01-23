@@ -1,11 +1,15 @@
 from django.shortcuts import render
-from django.views.generic import ListView
-from .models import Book
+from django.views.generic import ListView, DetailView
+from .models import Weather
 
 # Create your views here.
 
 # BookListに合わせて継承していく
 class TopView(ListView):
-    template_name = "list.html"
-    # どのデータを使うのかを明示する
-    model = Book
+    model = Weather
+    template_name = "top.html"
+
+
+class WeatherDetailView(DetailView):
+    model = Weather
+    template_name = "detail.html"
